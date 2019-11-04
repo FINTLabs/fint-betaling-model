@@ -1,0 +1,2 @@
+# fint-betaling-model
+
