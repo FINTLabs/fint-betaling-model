@@ -9,6 +9,10 @@ import java.util.List;
 public class Order {
     private List<OrderLine> orderLines;
     private List<Customer> customers;
-    private URI principal;
+    private URI principalUri;
     private String requestedNumberOfDaysToPaymentDeadline;
+
+    public Long sum() {
+        return orderLines.stream().mapToLong(OrderLine::sum).sum();
+    }
 }

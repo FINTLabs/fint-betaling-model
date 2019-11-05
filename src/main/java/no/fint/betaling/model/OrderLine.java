@@ -6,6 +6,11 @@ import java.net.URI;
 
 @Data
 public class OrderLine {
-    private URI lineItem;
+    private URI itemUri;
     private Long numberOfItems;
+    private Long itemPrice;
+
+    public Long sum() {
+        return numberOfItems * itemPrice;
+    }
 }
