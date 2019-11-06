@@ -6,8 +6,8 @@ import java.net.URI;
 
 @Data
 public class Customer {
-    private String customerId;
-    private String displayName;
+    private String id;
+    private String name;
     private String email;
     private String mobile;
     private String postalAddress;
