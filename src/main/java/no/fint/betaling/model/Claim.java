@@ -9,6 +9,7 @@ import java.util.Set;
 
 @Data
 public class Claim {
+    private String orgId;
     private String orderNumber;
     private String invoiceNumber;
     private LocalDate invoiceDate;
