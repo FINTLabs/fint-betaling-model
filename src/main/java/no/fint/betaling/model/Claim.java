@@ -28,4 +28,5 @@ public class Claim {
     private ClaimStatus claimStatus;
     private String statusMessage;
     private Set<String> classes;
+    private Long timestamp;
 }
