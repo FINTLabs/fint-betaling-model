@@ -24,7 +24,7 @@ public class Claim {
     private User createdBy;
     private URI principalUri;
     private URI invoiceUri;
-    private List<OrderLine> orderLines;
+    private List<OrderItem> orderItems;
     private ClaimStatus claimStatus;
     private String statusMessage;
     private Set<String> classes;

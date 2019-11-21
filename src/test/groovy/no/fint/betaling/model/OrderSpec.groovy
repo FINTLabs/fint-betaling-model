@@ -8,9 +8,9 @@ class OrderSpec extends Specification {
 
         given:
         def order = new Order()
-        order.orderLines = []
-        order.orderLines.add(new OrderLine(itemPrice: 10, numberOfItems: 5))
-        order.orderLines.add(new OrderLine(itemPrice: 2, numberOfItems: 10))
+        order.orderItems = []
+        order.orderItems.add(new OrderItem(itemPrice: 10, itemQuantity: 5))
+        order.orderItems.add(new OrderItem(itemPrice: 2, itemQuantity: 10))
 
         when:
         def sum = order.sum()
