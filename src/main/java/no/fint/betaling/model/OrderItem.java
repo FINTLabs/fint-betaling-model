@@ -6,12 +6,11 @@ import java.net.URI;
 
 @Data
 public class OrderItem {
-    private String itemCode;
-    private String itemName;
-    private String itemDescription;
+    private String code;
+    private String description;
     private Long itemQuantity;
     private Long itemPrice;
-    private URI itemUri;
+    private URI uri;
 
     public Long sum() {
         return itemQuantity * itemPrice;
