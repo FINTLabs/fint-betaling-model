@@ -16,7 +16,7 @@ public class Claim {
     private LocalDate paymentDueDate;
     private LocalDate createdDate;
     private LocalDate lastModifiedDate;
-    private List<CreditNote> creditedAmount;
+    private List<CreditNote> creditNotes;
     private Long amountDue;
     private Long originalAmountDue;
     private String requestedNumberOfDaysToPaymentDeadline;
