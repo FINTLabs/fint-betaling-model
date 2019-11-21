@@ -11,7 +11,7 @@ import java.util.Set;
 public class Claim {
     private String orgId;
     private String orderNumber;
-    private List<String> invoiceNumber;
+    private Set<String> invoiceNumbers;
     private LocalDate invoiceDate;
     private LocalDate paymentDueDate;
     private LocalDate createdDate;
@@ -22,8 +22,8 @@ public class Claim {
     private String requestedNumberOfDaysToPaymentDeadline;
     private Customer customer;
     private User createdBy;
-    private Organisation school;
-    private URI principalUri;
+    private Organisation organisationUnit;
+    private Principal principal;
     private URI invoiceUri;
     private List<OrderItem> orderItems;
     private ClaimStatus claimStatus;
