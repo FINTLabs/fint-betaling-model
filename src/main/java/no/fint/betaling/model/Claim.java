@@ -11,7 +11,7 @@ import java.util.Set;
 public class Claim {
     private String orgId;
     private String orderNumber;
-    private String invoiceNumber;
+    private List<String> invoiceNumber;
     private LocalDate invoiceDate;
     private LocalDate paymentDueDate;
     private LocalDate createdDate;
