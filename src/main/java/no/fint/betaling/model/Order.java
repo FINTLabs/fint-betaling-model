@@ -11,6 +11,7 @@ public class Order {
     private List<Customer> customers;
     private URI principalUri;
     private String requestedNumberOfDaysToPaymentDeadline;
+    private Organisation school;
 
     public Long sum() {
         return orderItems.stream().mapToLong(OrderItem::sum).sum();

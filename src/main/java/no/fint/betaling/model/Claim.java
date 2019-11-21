@@ -22,6 +22,7 @@ public class Claim {
     private String requestedNumberOfDaysToPaymentDeadline;
     private Customer customer;
     private User createdBy;
+    private Organisation school;
     private URI principalUri;
     private URI invoiceUri;
     private List<OrderItem> orderItems;
