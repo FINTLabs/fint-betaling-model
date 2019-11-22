@@ -7,10 +7,10 @@ class OrderSpec extends Specification {
     def "Sum should give the sum of all orderlines"() {
 
         given:
-        def order = new Order()
-        order.orderItems = []
-        order.orderItems.add(new OrderItem(itemPrice: 10, itemQuantity: 5))
-        order.orderItems.add(new OrderItem(itemPrice: 2, itemQuantity: 10))
+        def order = new Order(orderItems: [
+                new OrderItem(lineitem: new Lineitem(itemPrice: 10), itemQuantity: 5),
+                new OrderItem(lineitem: new Lineitem(itemPrice: 2), itemQuantity: 10)
+        ])
 
         when:
         def sum = order.sum()
