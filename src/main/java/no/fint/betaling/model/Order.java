@@ -2,7 +2,6 @@ package no.fint.betaling.model;
 
 import lombok.Data;
 
-import java.net.URI;
 import java.util.List;
 
 @Data
@@ -12,6 +11,7 @@ public class Order {
     private String requestedNumberOfDaysToPaymentDeadline;
     private Organisation organisationUnit;
     private Principal principal;
+    private User user;
 
     public Long sum() {
         return orderItems.stream().mapToLong(OrderItem::sum).sum();

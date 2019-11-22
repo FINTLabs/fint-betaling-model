@@ -6,7 +6,8 @@ import java.net.URI;
 
 @Data
 public class OrderItem {
-    private String code;
+    private String itemCode;
+    private String itemName;
     private String description;
     private Long itemQuantity;
     private Long itemPrice;
