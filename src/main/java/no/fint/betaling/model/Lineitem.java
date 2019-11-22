@@ -6,7 +6,7 @@ import java.net.URI;
 
 @Data
 public class Lineitem {
-    private String code;
+    private String itemCode;
     private Long itemPrice;
     private Long taxrate;
     private String description;
