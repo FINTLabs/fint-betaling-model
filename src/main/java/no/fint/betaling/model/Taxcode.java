@@ -7,7 +7,7 @@ import java.net.URI;
 @Data
 public class Taxcode {
     private String code;
-    private Double rate;
+    private Long rate;
     private String description;
     private URI uri;
 }

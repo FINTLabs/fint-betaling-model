@@ -7,8 +7,8 @@ import java.net.URI;
 @Data
 public class Lineitem {
     private String code;
-    private Double itemPrice;
-    private Double taxrate;
+    private Long itemPrice;
+    private Long taxrate;
     private String description;
     private URI uri;
 }
