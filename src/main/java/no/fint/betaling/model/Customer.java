@@ -2,8 +2,6 @@ package no.fint.betaling.model;
 
 import lombok.Data;
 
-import java.net.URI;
-
 @Data
 public class Customer {
     private String id;
@@ -13,5 +11,5 @@ public class Customer {
     private String postalAddress;
     private String postalCode;
     private String city;
-    private URI person;
+    private String person;
 }

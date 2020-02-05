@@ -2,7 +2,6 @@ package no.fint.betaling.model;
 
 import lombok.Data;
 
-import java.net.URI;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
@@ -24,7 +23,7 @@ public class Claim {
     private User createdBy;
     private Organisation organisationUnit;
     private Principal principal;
-    private URI invoiceUri;
+    private String invoiceUri;
     private List<OrderItem> orderItems;
     private ClaimStatus claimStatus;
     private String statusMessage;
