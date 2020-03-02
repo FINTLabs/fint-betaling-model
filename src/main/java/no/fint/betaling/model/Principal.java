@@ -10,5 +10,5 @@ public class Principal {
     private String description;
     private Set<String> lineitems;
     private String uri;
-    private Set<Organisation> organisations;
+    private Organisation organisation;
 }
