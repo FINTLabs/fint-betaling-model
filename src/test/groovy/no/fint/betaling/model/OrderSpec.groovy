@@ -8,7 +8,7 @@ class OrderSpec extends Specification {
 
         given:
         def order = new Order(orderItems: [
-                new OrderItem(lineitem: new Lineitem(itemPrice: 10), itemPrice: 10, itemQuantity: 5),
+                new OrderItem(lineitem: new Lineitem(itemPrice: 10), itemQuantity: 5),
                 new OrderItem(lineitem: new Lineitem(itemPrice: 2), itemPrice: 2, itemQuantity: 10)
         ])
 

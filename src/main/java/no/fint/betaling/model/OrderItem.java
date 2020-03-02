@@ -10,6 +10,9 @@ public class OrderItem {
     private Lineitem lineitem;
 
     public Long sum() {
+        if (itemPrice == null) {
+            return itemQuantity * lineitem.getItemPrice();
+        }
         return itemQuantity * itemPrice;
     }
 }
