@@ -8,7 +8,7 @@ import java.util.Set;
 public class Principal {
     private String code;
     private String description;
-    private Set<String> lineitems;
+    private Set<Lineitem> lineitems;
     private String uri;
     private Organisation organisation;
 }
