@@ -6,9 +6,13 @@ import lombok.Data;
 public class OrderItem {
     private String description;
     private Long itemQuantity;
+    private Long itemPrice;
     private Lineitem lineitem;
 
     public Long sum() {
-        return itemQuantity * lineitem.getItemPrice();
+        if (itemPrice == null) {
+            return itemQuantity * lineitem.getItemPrice();
+        }
+        return itemQuantity * itemPrice;
     }
 }
