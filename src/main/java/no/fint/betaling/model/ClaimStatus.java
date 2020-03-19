@@ -1,7 +1,15 @@
 package no.fint.betaling.model;
 
 public enum ClaimStatus {
-    STORED("stored"), SENT("sent"), ACCEPTED("accepted"), PAID("paid"), ERROR("error"), SEND_ERROR("send error"), ACCEPT_ERROR("accept error"), UPDATE_ERROR("update error");
+    STORED("stored"),
+    SENT("sent"),
+    ACCEPTED("accepted"),
+    ISSUED("issued"),
+    PAID("paid"),
+    ERROR("error"),
+    SEND_ERROR("send error"),
+    ACCEPT_ERROR("accept error"),
+    UPDATE_ERROR("update error");
 
     private final String claimStatus;
 
