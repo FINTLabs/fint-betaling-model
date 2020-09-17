@@ -9,7 +9,8 @@ public enum ClaimStatus {
     ERROR("error"),
     SEND_ERROR("send error"),
     ACCEPT_ERROR("accept error"),
-    UPDATE_ERROR("update error");
+    UPDATE_ERROR("update error"),
+    CANCELLED("cancelled");
 
     private final String claimStatus;
 
