@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             environment {
-                BINTRAY = credentials('fint-bintray')
+                REPOSILITE = credentials('reposilite')
             }
             when {
                 tag pattern: "v\\d+\\.\\d+\\.\\d+(-\\w+-\\d+)?", comparator: "REGEXP"

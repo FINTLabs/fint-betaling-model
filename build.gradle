@@ -25,6 +25,7 @@ repositories {
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.7.0/dependencies.gradle'
 dependencies {
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    compile('no.fint:fint-spring-secrets:0.2.2')
 
     testCompile("org.spockframework:spock-core:${spockSpringVersion}")
     testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
@@ -36,8 +37,4 @@ jacocoTestReport {
     reports {
         xml.enabled true
     }
-}
-
-if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.7.0/bintray.gradle'
 }
